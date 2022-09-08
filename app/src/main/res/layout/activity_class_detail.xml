@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetail">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/courseDetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/courseDetStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/courseDetEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/courseDetStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course Status" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructor:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/courseDetInstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructor Name" />
+
+            <TextView
+                android:id="@+id/courseDetInstEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructor email" />
+
+            <TextView
+                android:id="@+id/courseDetInstPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructor Phone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Notes:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/courseDetNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional notes here" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/assessmentRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <Button
+                android:id="@+id/btnAddAssessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addAssessmentBtn"
+                android:text="Add New Assessment" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickEditCourse"
+                android:text="Edit Course" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCourseNotify"
+                android:text="Notify for this course" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickShareCourse"
+                android:text="Share this Course" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A80808"
+                android:onClick="onClickDeleteCourse"
+                android:text="DELETE THIS COURSE" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

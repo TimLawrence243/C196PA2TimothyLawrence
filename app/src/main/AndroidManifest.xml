@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c196pa2timothylawrence">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196PA2TimothyLawrence">
+        <activity
+            android:name=".UI.CourseNotify"
+            android:exported="false" />
+
+        <activity
+            android:name=".UI.TermEdit"
+            android:exported="false"
+            android:label="Term Edit" />
+        <activity
+            android:name=".UI.CourseEdit"
+            android:exported="false"
+            android:label="Course Edit" />
+        <activity
+            android:name=".UI.AssessmentDetail"
+            android:exported="false"
+            android:label="Edit Assessment" />
+        <activity
+            android:name=".UI.AssessmentAdd"
+            android:exported="false"
+            android:label="Assessment Add"
+            android:parentActivityName=".UI.CourseDetail" />
+        <activity
+            android:name=".UI.CourseAdd"
+            android:exported="false"
+            android:label="Class Add"
+            android:parentActivityName=".UI.CourseList" />
+        <activity
+            android:name=".UI.TermAdd"
+            android:exported="false"
+            android:label="Term Add"
+            android:parentActivityName=".UI.TermList" />
+        <activity
+            android:name=".UI.CourseDetail"
+            android:exported="false"
+            android:label="Class Detail" />
+        <activity
+            android:name=".UI.CourseList"
+            android:exported="false"
+            android:label="Class List"
+            android:parentActivityName=".UI.TermList" />
+        <activity
+            android:name=".UI.TermList"
+            android:exported="false"
+            android:label="Term List" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:exported="true"
+            android:label="Term Scheduling">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>

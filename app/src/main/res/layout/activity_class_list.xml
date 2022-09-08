@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtClassListTermName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Term Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/txtClassListTermStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/txtClassListTermEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="29dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/courseRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="473dp" />
+
+            <Button
+                android:id="@+id/btnAddClass"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:onClick="addClassBtn"
+                android:text="Add New Class" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/btnEditTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickEditTerm"
+                android:text="Edit This Term" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btnDeleteTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A80808"
+                android:onClick="onClickDeleteTerm"
+                android:text="Delete Term" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
